@@ -1,0 +1,27 @@
+{
+  "name": "controller",
+  "version": "0.0.1",
+  "description": "Lights platform controller",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightsPlatform/Controller.git"
+  },
+  "keywords": [
+    "IoT",
+    "Simulator",
+    "Controller"
+  ],
+  "author": "Sepehr Sabour, Parham Alvani",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/LightsPlatform/Controller/issues"
+  },
+  "homepage": "https://github.com/LightsPlatform/Controller#readme",
+  "dependencies": {
+    "koa": "^2.5.0"
+  }
+}
