@@ -4,7 +4,7 @@
   "description": "Lights platform controller",
   "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,12 @@
   },
   "homepage": "https://github.com/LightsPlatform/Controller#readme",
   "dependencies": {
-    "koa": "^2.5.0"
+    "koa": "^2.5.0",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.4.0",
+    "nodemon": "^1.15.0",
+    "raw-body": "^2.3.2",
+    "superagent": "^3.8.2",
+    "superagent-prefix": "0.0.2"
   }
 }
