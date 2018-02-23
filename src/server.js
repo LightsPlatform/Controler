@@ -11,6 +11,7 @@ app
     .use(router.allowedMethods())
     .use(mount(require('./routes/sensor')))
     .use(mount(require('./routes/actuator')))
+    .use(mount(require('./routes/broker')))
 
 const port = process.env.PORT || 5000
 app.listen(port)
