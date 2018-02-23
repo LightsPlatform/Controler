@@ -23,6 +23,7 @@
   "homepage": "https://github.com/LightsPlatform/Controller#readme",
   "dependencies": {
     "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
     "koa-mount": "^3.0.0",
     "koa-router": "^7.4.0",
     "nodemon": "^1.15.0",

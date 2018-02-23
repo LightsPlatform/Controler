@@ -2,12 +2,12 @@ const Koa = require('koa');
 const Router = require('koa-router')
 const parser = require('./body-parser')
 const mount = require('koa-mount')
-
+const koaBody = require('koa-body');
 const app = new Koa();
 const router = new Router()
 
 app
-    .use(parser())
+    .use(koaBody())
     .use(router.allowedMethods())
     .use(mount(require('./routes/sensor')))
     .use(mount(require('./routes/actuator')))
