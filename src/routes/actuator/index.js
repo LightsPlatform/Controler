@@ -58,6 +58,23 @@ router.post('/api/actuator/:id/trigger', async (ctx) => {
 })
 
 
+router.get('/api/actuator/:id/state', async (ctx) => {
+    const id = ctx.params.id
+    ctx.assert(id, 400, "Actuator id is required!")
+
+    try {
+        const t = await request
+            .get(`/actuator/${id}/state`)
+            .use(prefix)
+        ctx.status = 200
+        ctx.body = t.body
+    } catch (e) {
+        ctx.status = e.status
+        ctx.body = e.response.text
+    }
+})
+
+
 
 app.use(router.routes())
 
